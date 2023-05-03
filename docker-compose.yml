@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  dev-db:
+    image: postgres:13
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret123
+      POSTGRES_DB: nest
+    networks:
+      - my-network
+
+  nest-app:
+    build: .
+    ports:
+      - 3000:3000
+    environment:
+      DATABASE_URL: postgres://postgres:123@dev-db:5432/nest
+    depends_on:
+      - dev-db
+    networks:
+      - my-network
+
+networks:
+  my-network:
