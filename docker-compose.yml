@@ -16,7 +16,7 @@ services:
     ports:
       - 3000:3000
     environment:
-      DATABASE_URL: postgres://postgres:123@dev-db:5432/nest
+      DATABASE_URL: postgresql://postgres:secret123@localhost:5434/nest?schema=public
     depends_on:
       - dev-db
     networks:
