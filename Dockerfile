@@ -9,4 +9,5 @@ RUN npm install
 
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+# new migrate and start app script
+CMD [ "npm", "start", "start:migrate:prod" ]
