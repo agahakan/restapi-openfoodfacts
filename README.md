@@ -67,19 +67,6 @@ If you want to test the endpoints, you can click on the endpoint you want to tes
 
 However, you can also make requests to the API without using Swagger. To do so, you can use any HTTP client, such as cURL, Postman, or Insomnia, to send HTTP requests to the endpoints in the application.
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
 ## Author
 
 - [@agahakan](https://www.github.com/agahakan)
