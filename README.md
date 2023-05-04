@@ -32,34 +32,26 @@ This project is fully containerized using Docker, and the development environmen
 
 To run the application, follow these steps:
 
-1. Install the dependencies:
-```bash
-$ npm install
-```
-
-2. Start the Docker containers:
+1. Start the Docker containers:
 
 ```bash
 # This will start the Postgres container and the NestJS app container.
 $ docker-compose up -d
 ```
-3.  You can check if the containers are running using the following command:
+
+2.  You can check if the containers are running using the following command:
  ```bash
 $ docker ps
 ```
-4. Run the following command to apply database migrations using Prisma:
 
-```bash
-$ npx prisma migrate dev
-```
-5. Now that the containers are up and running, you can access the NestJS app by navigating to http://localhost:3000 in your browser.
+3. Now that the containers are up and running, you can access the NestJS app by navigating to http://localhost:3000/api in your browser.
 
-6. Prisma Studio is a web-based GUI tool for exploring and managing databases. To launch Prisma Studio, open a terminal and run the following command:
+4. Prisma Studio is a web-based GUI tool for exploring and managing databases. To launch Prisma Studio, open a terminal and run the following command:
 
 ```bash
 $ npx prisma studio
 ```
-7. You can now navigate to http://localhost:5555 to explore the DB with Prisma Studio.
+5. You can now navigate to http://localhost:5555 to explore the DB with Prisma Studio.
 
 That's it! You should now be able to run the NestJS app and interact with the Postgres database. Don't forget to stop the containers once you're done using the following command:
 
