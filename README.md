@@ -9,7 +9,7 @@ This API provides endpoints to search for products with barcodes using the OpenF
 
 ## Prerequisites
 
-**Node.js**: You need to have Node.js installed on your system to run this application. You can download and install Node.js from the official website: https://nodejs.org/
+Node.js: You need to have Node.js installed on your system to run this application. You can download and install Node.js from the official website: https://nodejs.org/
 
 NestJS: NestJS is a framework for building efficient, scalable, and enterprise-grade server-side applications. You can install NestJS using npm, the package manager for Node.js:
 
