@@ -73,4 +73,4 @@ However, you can also make requests to the API without using Swagger. To do so, 
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+[MIT licensed](LICENSE).
